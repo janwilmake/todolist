@@ -1,8 +1,19 @@
 {
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250124.3"
+  "name": "todo-list-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Todo List API using Cloudflare Workers",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
-    "sponsorflare": "^0.0.35"
+    "hono": "^3.12.0",
+    "@hono/zod-validator": "^0.1.11",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240208.0",
+    "wrangler": "^3.25.0"
   }
 }
